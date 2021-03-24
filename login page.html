@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="login-page">
+		<div class="form">
+			<form class="regester-form" action="lo.php">
+				<input type="text" placeholder="Username"/>
+				<input type="Password" placeholder="Password"/>
+				<input type="text" placeholder="Email id"/>
+				<button>create</button>
+				<p class="message">Already Regestered ? <a href="#" style="color: red;">Login</a></p>
+			</form>
+	
+		<form class="login-form" >
+				<input type="text" placeholder="Username"/>
+				<input type="Password" placeholder="Password"/>
+				<button>Login</button>
+				<p class="message">Not Regestered ? <a href="#"style="color: red;">Register</a></p><br>
+				
+			</form>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$('.message a').click(function()
+	{
+		$('form').animate({height:"toggle", opacity:"toggle"},"slow");
+	});
+</script>
+</body>
+</html>
